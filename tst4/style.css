@@ -1,0 +1,114 @@
+:root {
+    --color-fundo: #0D0D0D;
+    --cor0: #F2C12E;
+    --cor1: #F2BF91;
+    --cor2: #F28444;
+    --cor3: #A64D2D;
+    --cor4: rgb(26, 26, 26);
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font: normal 1em Arial, sans-serif;
+    background-color: var(--color-fundo);
+    color: aliceblue;
+}
+
+mark {
+    background-color: var(--cor0);
+    color: var(--cor3);
+    padding: 1px 3px;
+}
+abbr {
+    text-decoration: none;
+}
+audio {
+    width: 150px;
+    margin: auto;
+    display: block;
+}
+picture {
+    max-width: 400px;
+}
+picture > img {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+ol {
+    list-style-type: decimal;
+    columns: 2;
+    list-style-position: outside;
+}
+
+#fundo-imagem {
+    background-image: url(imagens/imagem-fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 230px;
+    /* padding-top: 210px; */
+}
+
+#fundo-imagem h1 {
+    position: absolute;
+    margin-top: 160px;  
+}
+#fundo-imagem p {
+    position: absolute;
+    margin-top: 195px;
+}
+
+
+nav {
+    background-color: var(--cor4);
+    min-width: 100px;
+    max-width: 400px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 20px;
+}
+nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor2);
+    transition: .5s;
+}
+nav a:hover {
+    color: var(--cor1);
+}
+
+article {
+    background-color: var(--cor4);
+    border-radius: 10px;
+    max-width: 800px;
+    min-width: 400px;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+h2 {
+    color: var(--cor2);
+}
+
+div.video {
+    min-width: 200px;
+    max-width: 560;
+    padding-bottom: 50%;
+    position: relative;
+}
+div.video iframe {
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+    position: absolute;
+    left: 8%;
+    top: 8%;
+}

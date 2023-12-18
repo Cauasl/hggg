@@ -1,0 +1,43 @@
+body {
+    /* background-color: #0D0D0D; */
+    background-image: linear-gradient(to left, #0D0D0D 30%, #0d2716 95%);
+    color: aliceblue;
+    font: normal 16pt Arial;
+}
+
+div#titulo {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 35pt;
+    font-weight: bold;
+}
+
+div#divDados {
+    background-color: #0D0D0D;
+    width: 500px;
+    padding: 1px 10px 1px;
+    margin-left: 10px;
+    margin-top: 150px;
+    border-radius: 10px;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+    background-color: #1c1c1c;
+    border: hidden;
+    color: white;
+}
+
+audio {
+    margin-bottom: 10px;
+    width: 273px;
+    border-radius: 5px;
+}
+
+.botao {
+    background-color: #59D986;
+    color: black;
+    font-weight: bold;
+}

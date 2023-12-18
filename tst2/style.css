@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(40, 40, 40);
+    font: normal 16pt Arial;
+    color: aliceblue;
+}
+
+mark {
+    background-color: blueviolet;
+    color: aliceblue;
+}
+
+a {
+    color: cadetblue;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="musicicon.png" type="image/x-icon">
+    <title>Musicas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        select {
+            background-color: #1c1c1c;
+            color: aliceblue;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tocar Musica</h1>
+    <select size="7" style="width: 200px;" multiple>
+        <option value="AProvaDeBalas">A Prova De Balas</option>
+        <option value="Arcade">Arcade</option>
+        <option value="DeathNote">Death Note</option>
+        <option value="DuskTillDawn">Dusk Till Dawn</option>
+        <option value="Lovely">Lovely</option>
+        <option value="MobyDick">Moby Dick</option>
+        <option value="SemEla">Sem Ela</option>
+        <option value="Lugarzin">Lugarzin</option>
+        <option value="MeiaNoiteEPouca">Meia Noite E Pouca</option>
+        <option value="Passarela">Passarela</option>
+        <option value="PrimeiraNamorada">Primeira Namorada</option>
+        <option value="SairPorAi">Sair Por Ai</option>
+        <option value="TudoBem">Tudo Bem</option>
+    </select>
+    <p id="nome-musica">Selecione uma musicas...</p>
+    <div id="msuid"></div>
+    <input type="button" value="selecionar" onclick="tocar()" class="botao">
+
+    <script src="interatividade.js"></script>
+</body>
+</html>

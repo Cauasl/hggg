@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(40, 40, 40);
+    font: normal 1em Arial, sans-serif;
+    color: aliceblue;
+}
+
+.info {
+    background-color: darkcyan;
+    width: 300px;
+    padding: 1px 5px 1px 5px;
+    border-radius: 20px;
+    
+}

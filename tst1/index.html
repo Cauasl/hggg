@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino / Teste</title>
+    <link rel="shortcut icon" href="iconsite.ico" type="image/x-icon">
+
+    <div class="imagefundo"></div>
+    
+    <style>
+
+        /*
+        .imagefundo
+        {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 512;
+            height: 512;
+            object-fit: scale-down;
+            background-image: url(Iconoir-Team-Iconoir-3d-center-box.512.png);
+            background-size: cover;
+        }
+        */ 
+
+        body
+        {
+            font: normal 16pt Arial;
+            background-color: rgb(40, 40, 40);
+            color: aliceblue;
+            background-repeat: no-repeat;
+        }
+
+        mark {
+            background-color: blueviolet;
+        }
+
+        h1 {
+            font-size: 35pt;
+        }
+
+        h2 {
+            font-size: 25pt;
+        }
+
+        input {
+            font-size: 15pt;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Informações do começo-->
+    <div id="nomeinicio">Nome <input type="text" name="inpt_nome" id="inpt_nome"></div>
+    <div id="sobrenomeinicio">Sobrenome <input type="text" name="inpt_sobrenome" id="inpt_sobrenome"></div>
+    <input type="button" value="Click" onclick="usuarioinf()" id="Clickini">
+    <p style="font-size: 10pt;"><a href="pagInicial.html" rel="prev" hreflang="pt-br"><strong>Voltar para pagina inicial</strong></a></p>
+    <hr>
+
+
+
+
+
+    <h1>Quincas Barba</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem illo, debitis quas natus nam hic veritatis esse dolorum omnis amet autem numquam facilis officia consectetur, voluptatum iusto voluptatem ea velit?</p>
+    <h2><abbr title="Quincas Borba">Trecho da obra</abbr> </h2>
+    <p><blockquote cite="https://brasilescola.uol.com.br/literatura/quincas-borba.htm">Nesse dia terás o maior prazer da vida, porque <strong>não há vinho que embriague como a <mark>verdade.</mark></strong> Crê-me, o <ins>Humanitismo</ins> é o remete das coisas; e eu, que formulei, sou o maior homem do mundo.</blockquote></p>
+    
+    <br>
+
+    <h1>Do que fala o <mark><ins>Humanitismo</ins></mark></h1>
+    <p>Assim como a teoria da <em>seleção natural</em> de <ins>Charles Darwin</ins>, está baseado na sobrevivencia dos mais aptos e enxerga a guerra como forma de seleção da espécie</p>
+    <hr>
+
+    <h1>Coisas sobre mim</h1>
+    <h2>Gosto de:</h2>
+    <ol type="A">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h2>Minhas redes sociais</h2>
+    <ul type="circle">
+        <li><em>Instagam</em> &rarr; <a href="https://www.instagram.com/_.cauazin_/" target="_blank" rel="external">@_.cauazin_</a> &#2764;</li>
+        <li><img src="imagens/Iconoir-Team-Iconoir-3d-center-box.512.png" alt="fssdsdsd"></li>
+    </ul>
+    
+    <!--Carregando Imagens-->
+    <picture>
+        <source media="(max-width: 770px)" srcset="imagens/imgbolinhas1.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imgbolinhas2.png" type="image/png">
+        <img src="imagens/imgbolinhas3.png" alt="Imagem grande de bolinhas">
+        <br>
+    </picture>
+
+    <!--Colocando uma Musica-->
+    <audio src="audios/SamSmithLikeICan.mp3" controls></audio>
+    
+    <script>
+        //Acessando o div
+        var nomeinicio = window.document.getElementById("nomeinicio");
+        var sobrenomeinicio = window.document.getElementById("sobrenomeinicio");
+        var troca = true;
+
+        function usuarioinf() {
+            if (troca) {
+                var nome = nomeinicio.querySelector('input#inpt_nome');
+                nomeinicio.innerHTML = String(`Bem vindo(a), <em><strong>${nome.value}</strong></em>!`);
+                nomeinicio.style.fontSize = "35pt";
+
+                var sobrenome = sobrenomeinicio.querySelector('input#inpt_sobrenome');
+                sobrenomeinicio.innerHTML = sobrenome.value;
+                sobrenomeinicio.style.fontSize = "20pt";
+            }else {
+                nomeinicio.innerHTML = `Nome <input type="text" name="inpt_nome" id="inpt_nome">`;
+                nomeinicio.style.fontSize = "16pt";
+                sobrenomeinicio.innerHTML = `Sobrenome <input type="text" name="inpt_sobrenome" id="inpt_sobrenome">`;
+                sobrenomeinicio.style.fontSize = "16pt";
+            }
+
+        troca = !troca;
+    }
+    </script>
+</body>
+</html>
