@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?família=Raleway:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 :root {
 	--cor0: #ffffff;
 	--cor1: #676f9d;
@@ -9,17 +9,17 @@
 	--cor4-transparente: #f9b17a7d;
 	--cor5: #22253a;
 	
-	--fontRaleway: 'Raleway', sans-serif;
+	--fontRethinkSans: 'Rethink Sans', sans-serif;
 }
 
 body {
 	background-color: var(--cor5);
-	font: normal 1em var(--fontRaleway);
+	font: normal 1em var(--fontRethinkSans);
 	color: var(--cor0);
 }
 
 main {
-	background-color: var(--cor3);
+	background-color: var(--cor5);
 	padding: 10px 20px 10px 30px;
 	border-radius: 10px;
 	max-width: 480px;
@@ -27,13 +27,29 @@ main {
 	position: relative;
 }
 
+section#cabeca, section#login {
+	padding: 10px 20px 10px 30px;
+	background-color: var(--cor3);
+	border-radius: 10px;
+}
+
 section#cabeca {
-	margin-top: 10px;
-	margin-bottom: 40px;
+	margin: 10px 0px;
 }
 section#cabeca nav{
 	text-align: center;
 }
+section#cabeca a {
+	color: var(--cor0);
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: .3s;
+}
+section#cabeca a:hover {
+	border-bottom: 2px solid var(--cor4);
+	transition: .3s;
+}
+
 
 section#login {
 	position: static;
@@ -59,6 +75,9 @@ img {
 }
 section#login a {
 	margin-top: 3px;
+	float: right;
+	color: var(--cor2);
+	display: inline;
 }
 
 
@@ -81,12 +100,6 @@ input.text:focus {
 	margin-left: 0px;
 }
 
-#mostrarsenha {
-	color: var(--cor4);
-	background-color: var(--cor2);
-}
-
-
 #botao {
 	margin: 30px 0px 5px 0px;
 	display: block;
@@ -96,11 +109,15 @@ input.text:focus {
 	background-color: var(--cor4);
 	box-shadow: 0px 0px 10px 2px var(--cor4-transparente);
 	outline: 0px solid transparent;
+	transition: 1s;
 }
-#botao:hover, #botao:active {
+#botao:active {
 	box-shadow: 0px 0px 10px 5px var(--cor4-transparente);
-	transition: .5s;
+	transition: .3s;
 }
+
+
+
 
 @media screen and (max-width: 740px) {
 	main {
@@ -114,8 +131,15 @@ input.text:focus {
 		position: relative;
 		margin-left: auto;
 		float: right;
-		top: 30px;
+		top: 20px;
 		right: -9px;
 		border-radius: 5px;
+	}
+	
+	section#login a {
+		margin-top: 3px;
+		float: none;
+		display: inline-block;
+		color: var(--cor2);
 	}
 }
