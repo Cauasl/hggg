@@ -1,14 +1,35 @@
 @charset "UTF-8";
 
 :root {
-	--cor0: black;
-	--cor1: white;
+	--cor0: #F20707;
+	--cor1: #F2911B;
+	--cor2: #F2BE22;
+	--cor3: #F2E307;
+	--cor4: #BF0A19;
 }
 
 body {
-	background-color: var(--cor0);
+	background-color: var(--cor1);
+	background-image: url('imagensmkart/backgroundmariokart.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
 	font: normal 1em Arial;
 	margin: 15px;
+}
+
+header {
+	color: white;
+	text-shadow: 0px 0px 8px #0000009c;
+}
+section#titulo {
+	margin: 150px 0px 0px 15px;
+}
+section#titulo h1 {
+	font-size: 2em;
+}
+section#titulo h1, section#titulo p {
+	margin: 0px;
 }
 
 main {
@@ -17,7 +38,7 @@ main {
 	max-width: 600px;
 	margin: auto;
 	border-radius: 5px;
-	background-color: var(--cor1);
+	background-color: white;
 	padding: 15px;
 }
 main section#personagens {
@@ -45,10 +66,10 @@ main section#personagns > img {
 	transform: translate(-50%, -50%);
 	position: fixed;
 	width: 300px;
-	background-color: var(--cor1);
+	background-color: white;
 	padding: 10px;
 	border-radius: 5px;
-	box-shadow: 0px 0px 8px var(--cor0);
+	box-shadow: 0px 0px 8px black;
 }
 #tela img {
 	display: block;
