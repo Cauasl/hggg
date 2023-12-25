@@ -1,6 +1,15 @@
 @charset "UTF-8";
 
+@font-face {
+	font-family: 'Nintendo';
+	src: url('fonts/Nintendo-DS-BIOS.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 :root {
+	--fundo1: #202020;
+	--fundo2: #ececec;
+
 	--cor0: #F20707;
 	--cor1: #F2911B;
 	--cor2: #F2BE22;
@@ -9,21 +18,23 @@
 }
 
 body {
-	background-color: var(--cor1);
-	background-image: url('imagensmkart/backgoundnovo.jpg');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center top;
+	background-color: var(--fundo1);
 	font: normal 1em Arial;
 	margin: 15px;
 }
 
 header {
+	background-image: url('imagensmkart/backgoundnovo.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 15% 10px 10px 10px;
+	margin: -15px -15px 15px -15px;
 	color: white;
 	text-shadow: 0px 0px 8px #0000009c;
 }
 section#titulo {
-	margin: 150px 0px 0px 15px;
+	margin: 0px;
 }
 section#titulo h1 {
 	font-size: 2em;
@@ -32,14 +43,40 @@ section#titulo h1, section#titulo p {
 	margin: 0px;
 }
 
+nav {
+	text-align: center;
+	padding: 5px;
+	box-shadow: 3px 3px 8px #00000096;
+	border-radius: 10px;
+	margin: 10px;
+}
+nav a {
+	margin: 0px 10px;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--cor1);
+	border-bottom: 2px solid transparent;
+	transition: 1s;
+}
+nav a:hover {
+	border-bottom: 2px solid var(--cor4);
+	transition: 1s;
+}
+nav span {
+	float: left;
+	color: var(--cor4);
+	font: normal bold 1em Arial, sans-serif;
+}
+
 main {
 	text-align: justify;
-	min-width: 400px;
+	min-width: 390px;
 	max-width: 600px;
 	margin: auto;
 	border-radius: 5px;
-	background-color: white;
+	background-color: var(--fundo2);
 	padding: 15px;
+	border: 1px solid var(--cor4);
 }
 main section#personagens {
 	white-space: nowrap;
@@ -50,7 +87,16 @@ main section#personagns > img {
 	display: inline-block;
 }
 article > img {
-	width: 100%;
+	width: 70%;
+	display: block;
+	margin: auto;
+}
+article > h2 {
+	font: normal bold 2.2em 'Nintendo', sans-serif;
+	color: var(--cor0);
+	border-bottom: 2px solid var(--cor1);
+	display: inline-block;
+	margin-bottom: 15px;
 }
 
 
