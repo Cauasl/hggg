@@ -55,7 +55,11 @@ nav {
 	padding: 10px;
 	box-shadow: 3px 3px 8px #00000096;
 	border-radius: 10px;
-	margin: 10px;
+	margin: 10px -10px;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: var(--fundo1);
 }
 nav a {
 	margin: 0px 10px;
