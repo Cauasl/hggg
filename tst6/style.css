@@ -140,3 +140,17 @@ article > h2 {
 	margin: 0px;
 	text-align: left;
 }
+
+
+footer {
+	text-align: center;
+	font-size: .7em;
+	color: var(--cor4);
+	margin: 10px;
+}
+footer p {
+	margin: 2px;
+}
+footer a {
+	color: var(--cor0);
+}
