@@ -98,16 +98,22 @@ main section#personagns > img {
 	display: inline-block;
 }
 section#map {
-	margin: auto;
-	width: 70%;
-}
-section#map span {
 	position: relative;
-	bottom: 50%;
+}
+section#map input {
+	position: absolute;
+	top: 50%;
+}
+section#map #ladoE {
+	left: 13%;
+}
+section#map #ladoD {
+	right: 13%;
 }
 section#map > img{
-	width: 91%;
-	display: inline-block;
+	width: 60%;
+	display: block;
+	margin: auto;
 }
 article > h2 {
 	font: normal bold 2.2em 'Nintendo', sans-serif;
