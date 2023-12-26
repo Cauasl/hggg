@@ -97,10 +97,17 @@ main section#personagens {
 main section#personagns > img {
 	display: inline-block;
 }
-article > img {
-	width: 70%;
-	display: block;
+section#map {
 	margin: auto;
+	width: 70%;
+}
+section#map span {
+	position: relative;
+	bottom: 50%;
+}
+section#map > img{
+	width: 91%;
+	display: inline-block;
 }
 article > h2 {
 	font: normal bold 2.2em 'Nintendo', sans-serif;

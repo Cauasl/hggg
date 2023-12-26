@@ -1,3 +1,4 @@
+//Sistema de mais informações dos personagens
 (function() {
 	let bodys = document.body;
 	let sec = document.querySelector("section#personagens");
@@ -33,3 +34,24 @@
 		});
 	}
 }());
+
+
+//Sistema de troca de imagem dos mapas
+let mapselect = 1;
+let map = document.querySelector('section#map');
+let imgmap = map.getElementsByTagName('img')[0];
+
+map.getElementsByTagName('span')[0].addEventListener("click", function() {
+	mapselect--;
+	if(mapselect <= 0) {
+		mapselect = 5;
+	}
+	imgmap.setAttribute("src", `imagensmkart/Mapas/map${mapselect}.jpg`);
+});
+map.getElementsByTagName('span')[1].addEventListener("click", function() {
+	mapselect++;
+	if(mapselect > 5) {
+		mapselect = 1;
+	}
+	imgmap.setAttribute("src", `imagensmkart/Mapas/map${mapselect}.jpg`);
+});
