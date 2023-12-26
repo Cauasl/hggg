@@ -41,17 +41,17 @@ let mapselect = 1;
 let map = document.querySelector('section#map');
 let imgmap = map.getElementsByTagName('img')[0];
 
-map.getElementById('ladoE').addEventListener("click", function() {
+function ladoE() {
 	mapselect--;
 	if(mapselect <= 0) {
 		mapselect = 5;
 	}
 	imgmap.setAttribute("src", `imagensmkart/Mapas/map${mapselect}.jpg`);
-});
-map.getElementById('ladoD').addEventListener("click", function() {
+};
+function ladoD() {
 	mapselect++;
 	if(mapselect > 5) {
 		mapselect = 1;
 	}
 	imgmap.setAttribute("src", `imagensmkart/Mapas/map${mapselect}.jpg`);
-});
+};

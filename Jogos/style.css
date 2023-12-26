@@ -103,15 +103,26 @@ section#map {
 section#map input {
 	position: absolute;
 	top: 50%;
+	transform: translate(0px, -50%);
+	background-color: var(--cor4);
+	border-width: 0px;
+	outline-width: 0px;
+	border-radius: 10px;
+	color: white;
+	padding: 3vw 5px;
+}
+section#map input:active {
+	border: 3px solid var(--cor1);
 }
 section#map #ladoE {
-	left: 13%;
+	left: 8vw;
 }
 section#map #ladoD {
-	right: 13%;
+	right: 8vw;
 }
 section#map > img{
-	width: 60%;
+	max-width: 450px;
+	width: 70%;
 	display: block;
 	margin: auto;
 }
