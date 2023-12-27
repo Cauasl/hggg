@@ -93,12 +93,20 @@ main section#personagens {
 	white-space: nowrap;
 	overflow-x: auto;
 	height: 200px;
+	border-radius: 5px;
 }
 main section#personagns > img {
 	display: inline-block;
 }
 section#map {
 	position: relative;
+	padding: 20px;
+	background-color: var(--cor0);
+	background-image: url('imagensmkart/fundocomefeito.jpg');
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	border-radius: 20px;
 }
 section#map input {
 	position: absolute;
@@ -110,6 +118,7 @@ section#map input {
 	border-radius: 10px;
 	color: white;
 	padding: 3vw 5px;
+	box-shadow: 0px 0px 8px #00000092;
 }
 section#map input:active {
 	border: 3px solid var(--cor1);
@@ -125,6 +134,7 @@ section#map > img{
 	width: 70%;
 	display: block;
 	margin: auto;
+	box-shadow: 0px 0px 8px #00000092;
 }
 article > h2 {
 	font: normal bold 2.2em 'Nintendo', sans-serif;
