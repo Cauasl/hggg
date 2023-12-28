@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    background-color: darkgray;
+    padding-bottom: 90vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+section#Veigh {
+    background-image: url('imagensartistas/veigh2-g.png');
+
+}
+
+section#Teto {
+    background-image: url('imagensartistas/teto-g.png');
+}
+
+section#Cabelinho {
+    background-image: url('imagensartistas/mccabelinho-g.png');
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    section#Veigh {
+        background-image: url('imagensartistas/veigh2-p.png');
+    }
+}
