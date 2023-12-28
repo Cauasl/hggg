@@ -3,17 +3,57 @@
     padding: 0px;
 }
 
+:root {
+    --s1cor: #737373;
+}
+
+body {
+    font: normal 1em Arial, sans-serif;
+    color: white;
+}
+
+header {
+    color: black;
+}
+
 section {
     background-color: darkgray;
-    padding-bottom: 90vh;
-    background-size: 90vh;
+    padding-bottom: 93vh;
+    background-size: 100vh;
     background-repeat: no-repeat;
     background-position: left bottom;
+    text-shadow: 5px 5px 10px #00000083;
+    position: relative;
+}
+section div.melhoresmusicas {
+    display: inline-block;
+    background-color: #000000a2;
+    padding: 20px 10px;
+    position: absolute;
+    right: 1%;
+    bottom: 60%;
+    border-radius: 10px;
 }
 
 section#Veigh {
     background-image: url('imagensartistas/veigh2-g.png');
-
+    background-color: var(--s1cor);
+}
+section#Veigh > h2 {
+    position: absolute;
+    top: 53vh;
+    left: 45vh;
+    transform: translate(0px, -50%);
+    font-size: 10.1vh;
+    font-weight: bolder;
+}
+section#Veigh > p {
+    position: absolute;
+    bottom: 8%;
+    right: 1%;
+    width: 38%;
+    font-weight: bold;
+    font-size: 2.2vw;
 }
 
 section#Teto {
@@ -31,10 +71,13 @@ section#Cabelinho {
 @media screen and (max-width: 700px) {
 
     section {
-        background-size: 65vh;
+        background-size: contain;
     }
     
     section#Veigh {
         background-image: url('imagensartistas/veigh2-p.png');
+    }
+    section#Veigh h2 {
+        top: 30%;
     }
 }
