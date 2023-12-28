@@ -6,7 +6,7 @@
 section {
     background-color: darkgray;
     padding-bottom: 90vh;
-    background-size: contain;
+    background-size: 90vh;
     background-repeat: no-repeat;
     background-position: left bottom;
 }
@@ -28,7 +28,12 @@ section#Cabelinho {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+
+    section {
+        background-size: 80vh;
+    }
+    
     section#Veigh {
         background-image: url('imagensartistas/veigh2-p.png');
     }
