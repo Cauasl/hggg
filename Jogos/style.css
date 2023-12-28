@@ -38,6 +38,7 @@ section#titulo {
 section#titulo h1 {
 	font-size: 2em;
 	text-shadow: 0px 0px 8px #000000ba;
+	display: inline-block;
 }
 section#titulo h1, section#titulo p {
 	margin: 0px;
