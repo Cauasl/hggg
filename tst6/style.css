@@ -5,6 +5,11 @@
 
 :root {
     --s1cor: #737373;
+
+    --s2cor: #F27B13;
+    --s2cor2: #BF3415;
+
+    --s3cor: #413973;
 }
 
 body {
@@ -27,6 +32,8 @@ section {
 }
 section div.melhoresmusicas {
     display: inline-block;
+    max-height: 100px;
+    width: 36vw;
     background-color: #000000a2;
     padding: 20px 10px;
     position: absolute;
@@ -34,12 +41,25 @@ section div.melhoresmusicas {
     bottom: 60%;
     border-radius: 10px;
 }
-
-section#Veigh {
-    background-image: url('imagensartistas/veigh2-g.png');
-    background-color: var(--s1cor);
+div.melhoresmusicas img {
+    width: 50px;
+    float: left;
+    margin: 10px 5px;
 }
-section#Veigh > h2 {
+div.melhoresmusicas h2 {
+    font-size: 1.5em;
+}
+div.melhoresmusicas a {
+    text-decoration: none;
+    transition: .5s;
+    color: white;
+}
+div.melhoresmusicas a:hover {
+    text-decoration: underline;
+    color: #68cf00;
+    transition: .5s;
+}
+section > h2 {
     position: absolute;
     top: 53vh;
     left: 45vh;
@@ -47,7 +67,7 @@ section#Veigh > h2 {
     font-size: 10.1vh;
     font-weight: bolder;
 }
-section#Veigh > p {
+section > p {
     position: absolute;
     bottom: 8%;
     right: 1%;
@@ -56,12 +76,29 @@ section#Veigh > p {
     font-size: 2.2vw;
 }
 
+
+section#Veigh {
+    background-image: url('imagensartistas/veigh2-g.png');
+    background-color: var(--s1cor);
+}
+
 section#Teto {
     background-image: url('imagensartistas/teto-g.png');
+    background-color: var(--s2cor);
+}
+section#Teto > h2 {
+    top: 20vh;
+    left: 3vh;
 }
 
 section#Cabelinho {
     background-image: url('imagensartistas/mccabelinho-g.png');
+    background-color: var(--s3cor);
+}
+section#Cabelinho > h2 {
+    width: 200px;
+    top: 30vh;
+    left: 3vh;
 }
 
 
@@ -73,11 +110,39 @@ section#Cabelinho {
     section {
         background-size: contain;
     }
-    
+    section div.melhoresmusicas {
+        bottom: 35%;
+    }
+    div.melhoresmusicas img {
+        width: 20px;
+    }
+    div.melhoresmusicas h2 {
+        font-size: 1em;
+    }
+    section > h2 {
+        top: 35%;
+        left: 43vh;
+    }
+    section > p {
+        font-size: 2.1vw;
+        bottom: 10%;
+    }
+
+
     section#Veigh {
         background-image: url('imagensartistas/veigh2-p.png');
     }
-    section#Veigh h2 {
-        top: 30%;
+
+    section#Teto {
+        background-image: url('imagensartistas/teto-p.png');
+    }
+    section#Teto > h2 {
+        top: 38vh;
+        left: 60vw;
+    }
+
+    section#Cabelinho > h2 {
+        top: 38vh;
+        left: 60vw;
     }
 }
