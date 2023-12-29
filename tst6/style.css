@@ -1,148 +1,23 @@
 * {
-    margin: 0px;
-    padding: 0px;
-}
-
-:root {
-    --s1cor: #737373;
-
-    --s2cor: #F27B13;
-    --s2cor2: #BF3415;
-
-    --s3cor: #413973;
-}
-
-body {
-    font: normal 1em Arial, sans-serif;
-    color: white;
-}
-
-header {
-    color: black;
+	padding: 0px;
+	margin: 0px;
 }
 
 section {
-    background-color: darkgray;
-    padding-bottom: 93vh;
-    background-size: 100vh;
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    text-shadow: 5px 5px 10px #00000083;
-    position: relative;
-}
-section div.melhoresmusicas {
-    display: inline-block;
-    max-height: 100px;
-    width: 36vw;
-    background-color: #000000a2;
-    padding: 20px 10px;
-    position: absolute;
-    right: 1%;
-    bottom: 60%;
-    border-radius: 10px;
-}
-div.melhoresmusicas img {
-    width: 50px;
-    float: left;
-    margin: 10px 5px;
-}
-div.melhoresmusicas h2 {
-    font-size: 1.5em;
-}
-div.melhoresmusicas a {
-    text-decoration: none;
-    transition: .5s;
-    color: white;
-}
-div.melhoresmusicas a:hover {
-    text-decoration: underline;
-    color: #68cf00;
-    transition: .5s;
-}
-section > h2 {
-    position: absolute;
-    top: 53vh;
-    left: 45vh;
-    transform: translate(0px, -50%);
-    font-size: 10.1vh;
-    font-weight: bolder;
-}
-section > p {
-    position: absolute;
-    bottom: 8%;
-    right: 1%;
-    width: 38%;
-    font-weight: bold;
-    font-size: 2.2vw;
-}
-
-
-section#Veigh {
-    background-image: url('imagensartistas/veigh2-g.png');
-    background-color: var(--s1cor);
+	padding-bottom: 15vw;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 section#Teto {
-    background-image: url('imagensartistas/teto-g.png');
-    background-color: var(--s2cor);
+	background-color: blue;
 }
-section#Teto > h2 {
-    top: 20vh;
-    left: 3vh;
+
+section#Veigh {
+	background-color: yellow;
 }
 
 section#Cabelinho {
-    background-image: url('imagensartistas/mccabelinho-g.png');
-    background-color: var(--s3cor);
-}
-section#Cabelinho > h2 {
-    width: 200px;
-    top: 30vh;
-    left: 3vh;
-}
-
-
-
-
-
-@media screen and (max-width: 700px) {
-
-    section {
-        background-size: contain;
-    }
-    section div.melhoresmusicas {
-        bottom: 35%;
-    }
-    div.melhoresmusicas img {
-        width: 20px;
-    }
-    div.melhoresmusicas h2 {
-        font-size: 1em;
-    }
-    section > h2 {
-        top: 35%;
-        left: 43vh;
-    }
-    section > p {
-        font-size: 2.1vw;
-        bottom: 10%;
-    }
-
-
-    section#Veigh {
-        background-image: url('imagensartistas/veigh2-p.png');
-    }
-
-    section#Teto {
-        background-image: url('imagensartistas/teto-p.png');
-    }
-    section#Teto > h2 {
-        top: 38vh;
-        left: 60vw;
-    }
-
-    section#Cabelinho > h2 {
-        top: 38vh;
-        left: 60vw;
-    }
+	background-color: red;
 }
