@@ -4,10 +4,32 @@
 }
 
 section {
-	padding-bottom: 15vw;
+	padding-bottom: 60vw;
 	background-position: left bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
+	position: relative;
+}
+section > p {
+	position: absolute;
+	right: 5vw;
+	bottom: 5vw;
+	font-size: 2vw;
+	width: 30vw;
+}
+section div.melhoresmusicas {
+	position: absolute;
+	width: 30vw;
+	background-color: #000000aa;
+	padding: 5px;
+	color: white;
+	border-radius: 10px;
+	font-size: 2vw;
+	right: 5vw;
+	bottom: 25vw;
+}
+div.melhoresmusicas a {
+	color: white;
 }
 
 section#Teto {
@@ -20,4 +42,18 @@ section#Veigh {
 
 section#Cabelinho {
 	background-color: red;
+}
+
+
+@media screen and (max-width: 720px) {
+		section {
+			padding-bottom: 100vw;
+		}
+		section > p {
+		right: 6vw;
+		font-size: 3vw;
+		}
+		section div.melhoresmusicas {
+			bottom: 53vw;
+		}
 }
