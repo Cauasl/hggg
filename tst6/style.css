@@ -2,6 +2,25 @@
 	padding: 0px;
 	margin: 0px;
 }
+header {
+	padding: 10px 5px;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+	background-color: purple;
+}
+header h1 {
+	display: inline-block;
+	color: white;
+}
+header nav {
+	float: right;
+	transform: translate(0px, 50%);
+}
+header nav > a {
+	margin-right: 5px;
+	color: white;
+}
 
 section {
 	padding-bottom: 60vw;
