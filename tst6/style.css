@@ -2,6 +2,16 @@
 	padding: 0px;
 	margin: 0px;
 }
+:root {
+	--s1cor1: #262310;
+	--s1cor2: #F2C641;
+	--s1cor3: #D9CBA3;
+	--s1cor4: #8C5B3E;
+	--s1cor5: #A60A0A;
+	
+	
+}
+
 header {
 	padding: 10px 5px;
 	position: sticky;
@@ -34,11 +44,21 @@ section > p {
 	right: 5vw;
 	bottom: 5vw;
 	font-size: 2vw;
-	width: 30vw;
+	width: 35vw;
+	font-weight: bold;
+	text-shadow: 0px 0px 10px #00000066;
+}
+section > h2 {
+	position: absolute;
+	top: 32vw;
+	left: 2vw;
+	font-size: 7vw;
+	color: white;
+	width: 5vw;
 }
 section div.melhoresmusicas {
 	position: absolute;
-	width: 30vw;
+	width: 35vw;
 	background-color: #000000aa;
 	padding: 5px;
 	color: white;
@@ -51,16 +71,37 @@ div.melhoresmusicas a {
 	color: white;
 }
 
+
 section#Teto {
-	background-color: blue;
+	background-color: var(--s1cor4);
+	background-image: url('imagensartistas/teto.png');
 }
+section#Teto > h2 {
+	top: 15vw;
+}
+section#Teto > p {
+	color: var(--s1cor3);
+}
+section#Teto div.melhoresmusicas h2 {
+	color: var(--s1cor5);
+}
+section#Teto div.melhoresmusicas a {
+	color: var(--s1cor2);
+}
+
 
 section#Veigh {
 	background-color: yellow;
+	background-image: url('imagensartistas/veigh.png');
 }
+
 
 section#Cabelinho {
 	background-color: red;
+	background-image: url('imagensartistas/cabelinho.png');
+}
+section#Cabelinho > h2 {
+	top: 25vw;
 }
 
 
@@ -73,6 +114,21 @@ section#Cabelinho {
 		font-size: 3vw;
 		}
 		section div.melhoresmusicas {
-			bottom: 53vw;
+			bottom: 45vw;
 		}
+		
+		section#Teto {
+			background-image: url('imagensartistas/teto-left.png');
+		}
+		section#Teto > h2 {
+			top: 20vw;
+		}
+		
+		section#Cabelinho > h2 {
+			top: 40vw;
+		}
+		
+		/* section#Veigh {
+			background-image: url('imagensartistas/veigh-left.png');
+		} */
 }
