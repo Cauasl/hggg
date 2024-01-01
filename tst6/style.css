@@ -38,6 +38,15 @@ header nav > a {
 	color: white;
 }
 
+/* div.fundolayer {
+	background-image: url('imagensartistas/fundolayer.png');
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-attachment: fixed;
+	background-size: contain;
+	background-color: black;
+} */
+
 section {
 	padding-bottom: 60vw;
 	background-position: left bottom;
@@ -140,7 +149,4 @@ section#Cabelinho div.melhoresmusicas h2 {
 			font-size: 7vw;
 		}
 		
-		/* section#Veigh {
-			background-image: url('imagensartistas/veigh-left.png');
-		} */
 }
