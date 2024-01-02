@@ -7,6 +7,7 @@
 	--s1cor2: #F2C641;
 	--s1cor3: #D9CBA3;
 	--s1cor4: #8C5B3E;
+	--s1cor6: #624230;
 	--s1cor5: #A60A0A;
 	
 	--s2cor1: #BFBFBF;
@@ -23,11 +24,16 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 100;
-	background-color: purple;
+	background-color: transparent;
+	background-image: linear-gradient(to left, var(--s1cor4), var(--s1cor6));
+	box-shadow: 0px 3px 8px #0000007e;
 }
 header h1 {
 	display: inline-block;
 	color: white;
+	background-color: #0000009b;
+	padding: 1px;
+	border-radius: 5px;
 }
 header nav {
 	float: right;
@@ -38,17 +44,21 @@ header nav > a {
 	color: white;
 }
 
-/* div.fundolayer {
-	background-image: url('imagensartistas/fundolayer.png');
-	background-repeat: no-repeat;
-	background-position: left bottom;
-	background-attachment: fixed;
-	background-size: contain;
-	background-color: black;
-} */
+div#fundolayer1, div#fundolayer2, div#fundolayer3 {
+	position: relative;
+}
+div#fundolayer1 {
+	background-image: linear-gradient(to left, var(--s1cor4), var(--s1cor6));
+}
+div#fundolayer2 {
+	background-image: linear-gradient(to left, var(--s2cor1), var(--s2cor2));
+}
+div#fundolayer3 {
+	background-image: linear-gradient(to left, var(--s3cor2), var(--s3cor1));
+}
 
 section {
-	padding-bottom: 60vw;
+	padding-bottom: 80vw;
 	background-position: left bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -65,9 +75,9 @@ section > p {
 }
 section > h2 {
 	position: absolute;
-	top: 32vw;
-	left: 2vw;
-	font-size: 10vw;
+	bottom: 5vw;
+	left: 5vw;
+	font-size: 9vw;
 	color: white;
 	width: 5vw;
 	text-shadow: 0px 0px 10px #00000066;
@@ -87,14 +97,29 @@ div.melhoresmusicas a {
 	color: white;
 }
 
-
+div.imagens {
+	position: absolute;
+	top: 3vw;
+	left: 3vw;
+	width: 18vw;
+}
+div.imagens img {
+	width: 100%;
+	border-radius: 5px;
+}
+div.imagens img:nth-of-type(1) {
+	z-index: 4;
+}
+div.imagens img:nth-of-type(2) {
+	z-index: 3;
+}
+div.imagens img:nth-of-type(3) {
+	z-index: 2;
+}
 section#Teto {
-	background-color: var(--s1cor4);
+	/* background-color: var(--s1cor4); */
 	background-image: url('imagensartistas/teto.png');
 	color: var(--s1cor3);
-}
-section#Teto > h2 {
-	top: 15vw;
 }
 section#Teto div.melhoresmusicas h2 {
 	color: var(--s1cor5);
@@ -105,20 +130,15 @@ section#Teto div.melhoresmusicas a {
 
 
 section#Veigh {
-	background-color: var(--s2cor2);
 	color: white;
 	background-image: url('imagensartistas/veigh.png');
 }
 
 
 section#Cabelinho {
-	background-color: var(--s3cor1);
+	/* background-color: var(--s3cor1); */
 	background-image: url('imagensartistas/cabelinho.png');
 	color: var(--s3cor3);
-}
-section#Cabelinho > h2 {
-	top: 25vw;
-	font-size: 5vw;
 }
 section#Cabelinho div.melhoresmusicas h2 {
 	color: var(--s3cor2);
@@ -135,18 +155,6 @@ section#Cabelinho div.melhoresmusicas h2 {
 		}
 		section div.melhoresmusicas {
 			bottom: 45vw;
-		}
-		
-		section#Teto {
-			background-image: url('imagensartistas/teto-left.png');
-		}
-		section#Teto > h2 {
-			top: 20vw;
-		}
-		
-		section#Cabelinho > h2 {
-			top: 35vw;
-			font-size: 7vw;
 		}
 		
 }
