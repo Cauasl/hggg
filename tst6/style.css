@@ -81,6 +81,7 @@ section > p:nth-of-type(2) {
 	bottom: 5vw;
 	right: 5vw;
 	text-align: right;
+	font-size: 3vw;
 }
 section > h2 {
 	position: absolute;
